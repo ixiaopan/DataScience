@@ -1,0 +1,14 @@
+<section class="posts">
+  {% for post in posts %}
+  <div class="post-item">
+    <p class="post-meta">
+      <a class="post-author" href="{{ url_for('views.profile', username=post.author.name) }}">{{ post.author.name }}</a>
+      <span class="post-datetime">{{ post.timestamp }}</span>
+    </p>
+
+    <p class="post-content">
+      <a href="{{ url_for('views.detail', id=post.id) }}">{{ post.content }}</a>
+    </p>
+  </div>
+  {% endfor %}  
+</section>

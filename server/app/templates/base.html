@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block head %}
+  <title>{% block title %}{% endblock %} - My Application</title>
+  {% endblock %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="inner">
+      {% block navbar %}
+      <nav class="navbar">
+        <ul>
+          <li><a class="navbar-item {%if request.path == '/' %}active{% endif %}" data-path="{{url_for('views.index')}}" href="/">Home</a></li>
+        </ul>
+      </nav>
+      {% endblock %}
+
+      <ul class="sign">
+        {% if name %}
+        <li><a class="sign-item" href="{{ url_for('views.profile', username=name) }}">{{ name }}</a></li>
+        <li><a class="sign-item" href="/logout">Log Out</a></li>
+        {% else %}
+        <li><a class="sign-item" href="/register">Register</a></li>
+        <li><a class="sign-item" href="/signin">Sign In</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="inner">
+      {% block body%}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>

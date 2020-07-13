@@ -1,0 +1,210 @@
+/* global reset */
+
+body {
+  margin: 0;
+  font-family: Akzidenz,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+
+/* 表单样式 */
+.form-item {
+  display: flex;
+  align-items: center;
+}
+.form-item + .form-item {
+  margin-top: 16px;
+}
+.form-item label {
+  display: block;
+  width: 100px;
+  margin-right: 12px;
+  text-align: right;
+}
+.form-input {
+  padding: 4px 11px;
+  border: 1px solid #d9d9d9;
+  color: rgba(0,0,0,.65);
+  font-size: 14px;
+  transition: all .3s;
+}
+/* TODO: not work ?? */
+.form-input:focus {
+  border-color: #40a9ff;
+  box-shadow:  0 0 2px rgba(24,144,255,.2)
+}
+
+.form-button {
+  margin-top: 20px;
+  padding: 6px 12px;
+  border-radius: 2px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-button-primary {
+  background-color: #0e89ec;
+}
+.form-button-primary:hover,
+.form-button-primary:active {
+  background-color: #40a9ff;;
+}
+.form-textarea {
+  outline: none;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* alert */
+.alert {
+  background-color: #fffbe6;
+  border: 1px solid #ffe58f;
+  color: rgba(0,0,0,.65);
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 2px;
+}
+.alert-close {
+  float: right;
+  font-size: 12px;
+}
+
+/* Layout */
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #333;
+  box-shadow: 0 1px 4px #636363;
+}
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+}
+.navbar-item {
+  display: block;
+  padding: 8px 20px;
+  line-height: 32px;
+  color: #fff;
+}
+.navbar-item:hover,
+.navbar-item:active,
+.navbar-item.active {
+  background-color: #c72d2d;
+}
+
+.sign {
+  display: flex;
+  align-items: center;
+}
+.sign-item {
+  margin-left: 10px;
+  color: #fff;
+  transition: color 100ms;
+}
+.sign-item:hover,
+.sign-item:active {
+  color: #c72d2d;
+}
+.content .inner {
+  padding: 32px 0;
+}
+
+/* PostList */
+.post-item {
+  padding: 16px 0;
+  font-size: 12px;
+  color: #333;
+}
+.post-item + .post-item {
+  border-top: 1px solid #ccc;
+}
+
+/* Post, PostList */
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.post-author,
+.post-author:visited {
+  color: rgb(44, 146, 230);
+}
+.post-author:hover {
+  text-decoration: underline;
+}
+.post-datetime {
+  display: block;
+}
+
+/* Post */
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-item {
+  display: block;
+  height: 32px;
+  min-width: 32px;
+  margin-right: 12px;
+  padding: 0 6px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+
+  font-family: Arial;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(0,0,0,.65);
+  cursor: pointer;
+}
+
+.pagination-item:hover,
+.pagination-item-cur {
+  color: #1890ff;
+  background: #fff;
+  border-color: #1890ff;
+}

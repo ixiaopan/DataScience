@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ user.name }}{%endblock%}
+
+{% block body %}
+<div class="profile">
+  <div class="profile-avatar">
+    <img src="{{ user.avatar }}" alt="">
+  </div>
+
+  <ul class="profile-content">
+    <li>{{ user.name }}</li>
+    <li>{{ user.email }}</li>
+    <li>{{ user.about_me }}</li>
+    <li>Member since {{ user.memeber_since }}</li>
+    <li>Last Seen {{ user.last_seen }}</li>
+  </ul>
+
+  {% include '_posts.html' %}
+</div>
+{% endblock %}

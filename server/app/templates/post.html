@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{%endblock%}
+
+{% block body %}
+<div class="post">
+  <p class="post-meta">
+    <a class="post-author" href="{{ url_for('views.profile', username=post.author.name) }}">{{ post.author.name }}</a>
+    <span class="post-datetime">{{ post.timestamp }}</span>
+  </p>
+
+  <p class="post-content">{{ post.content }}</p>
+</div>
+{% endblock %}

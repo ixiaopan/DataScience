@@ -1,0 +1,21 @@
+<div class="pagination">
+  {% if pagination.has_prev %}
+    <a class="pagination-item" href="{{ url_for(request.endpoint, page=pagination.page - 1) }}">Prev</a>
+  {% endif %}
+
+  {% for page in pagination.iter_pages() %}
+    {% if page %}
+      {% if page == pagination.page %}
+      <span class="pagination-item pagination-item-cur">{{ page }}</span>
+      {% else %}
+      <a class="pagination-item" href="{{ url_for(request.endpoint, page=page) }}">{{ page }}</a>
+      {% endif %}
+    {% else %}
+      <span class="pagination-item" href="">...</span>
+    {% endif %}
+  {% endfor %}
+
+  {% if pagination.has_next %}
+    <a class="pagination-item" href="{{ url_for(request.endpoint, page=pagination.page + 1) }}">Next</a>
+  {% endif %}
+</div>
