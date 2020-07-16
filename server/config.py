@@ -32,11 +32,17 @@ class Test(Config):
 class Prod(Config):
   SQLALCHEMY_DATABASE_URI = ''
 
+class Dev_API(Config):
+  MONGODB_SETTINGS = {
+    'host': 'mongodb://localhost/demo'
+  }
 
 config = {
   'dev': Dev,
   'test': Test,
   'prod': Prod,
+
+  'dev_api': Dev_API,
 
   'default': Dev
 }

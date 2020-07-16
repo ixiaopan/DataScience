@@ -14,6 +14,13 @@ A Blog System Demo (Flask + MySQL) in《Flask Web Development》
 
 ~ pip install -r requirements.txt
 
+# run blog
+~ export FLASK_APP='flasky.py'
+~ flask run
+
+# run rest api
+# http://127.0.0.1:5000/api/v1/todos/
+~ export FLASK_APP='flasky-api.py'
 ~ flask run
 ```
 
