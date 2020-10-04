@@ -1,5 +1,5 @@
 Blog System
-=====
+=========
 
 A Blog System Demo (Flask + MySQL) in《Flask Web Development》
 
@@ -26,4 +26,4 @@ A Blog System Demo (Flask + MySQL) in《Flask Web Development》
 
 ## Screenshot
 
-![](https://github.com/ixiaopan/playground/raw/master/screenshots/blog-capture.png)
+![](https://github.com/ixiaopan/playground/raw/master/server/screenshots/blog-capture.png)
