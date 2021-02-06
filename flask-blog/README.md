@@ -33,4 +33,4 @@ A Blog System Demo (Flask + MySQL) from 《Flask Web Development》
 
 ## Screenshot
 
-![](https://github.com/ixiaopan/playground/raw/master/server/screenshots/blog-capture.png)
+![](https://github.com/ixiaopan/playground/raw/master/flask-blog/screenshots/blog-capture.png)
