@@ -1,6 +1,7 @@
-Simple Flask Demos
-=====
+# Data Science
 
-- Blog System(Flask + MySQL)
+- Python - A Simple Flask Application (Done)
+- Fundamentals of Machine Learning (In Progress)
+- Deep Learning (TODO)
+- Data Mining (TODO)
 
-- Employee System(React + Flask + MongoDB + Redis)
