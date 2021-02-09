@@ -13,6 +13,8 @@ server/migrations
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.ipynb_checkpoints
+FML/data/housing/
 
 # Virtual environment
-server/venv
+iserver/venv
