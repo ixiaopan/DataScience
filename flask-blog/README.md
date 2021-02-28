@@ -8,7 +8,7 @@ A Blog System Demo (Flask + MySQL) from 《Flask Web Development》
 ## Install
 
 ```
-~ cd ./flask-blog
+~ cd ./Flask-blog
 
 # create workspace
 ~ python3 -m venv venv
@@ -33,4 +33,4 @@ A Blog System Demo (Flask + MySQL) from 《Flask Web Development》
 
 ## Screenshot
 
-![](https://github.com/ixiaopan/playground/raw/master/flask-blog/screenshots/blog-capture.png)
+![](https://github.com/ixiaopan/playground/raw/master/Flask-blog/screenshots/blog-capture.png)
