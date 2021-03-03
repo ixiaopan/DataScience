@@ -16,6 +16,7 @@ yarn-error.log*
 .ipynb_checkpoints
 FML/data/housing/
 kaggle/
+backgrounds_challenge
 
 # Virtual environment
 iserver/venv
