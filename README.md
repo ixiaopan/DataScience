@@ -1,7 +1,8 @@
 # Data Science
 
-- Python - A Simple Flask Application (Done)
-- Fundamentals of Machine Learning (In Progress)
-- Deep Learning (TODO)
-- Data Mining (TODO)
+- Python - A Simple Flask Application
+- Fundamentals of Machine Learning 
+- Deep Learning
+- Data Mining
+- NLP
 
