@@ -1,8 +1,9 @@
 # Data Science
 
-- Python - A Simple Flask Application
+- Python 
+- FlaskBlog - A Simple Flask Application
 - Fundamentals of Machine Learning 
 - Deep Learning
-- Data Mining
-- NLP
+- Natural Language Processing - domain of interests
+- Projects - Machine Learning projects
 
