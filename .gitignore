@@ -2,7 +2,7 @@
 /node_modules
 
 # production
-data
+**/data/
 /build
 dist
 __pycache__
