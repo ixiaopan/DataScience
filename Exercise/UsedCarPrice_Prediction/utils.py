@@ -47,6 +47,17 @@ def categorical_eda(df, columns=None, hue=None):
     plt.show()
 
 
+def plot_counts_na(df, x, draw=True):
+    df[x] = df[x].fillna('NA')
+
+    print(df[x].value_counts(dropna=False))
+
+    if draw:
+        sns.countplot(data=df, x=x, order = df[x].value_counts().index)
+        plt.xticks(rotation=30)
+        plt.show()
+
+
 # === Diagnosis ===
 def check_duplicated(df, remove=False):
     duplicated_flag = df.duplicated()
@@ -106,7 +117,7 @@ def cutIQR(cleaned_df, col, q1=0.25, q2=0.75, r=1.5):
     
     cutted_df = cleaned_df[(cleaned_df[col] >= lower) & (cleaned_df[col] <= upper)]
 
-    return cutted_df, upper
+    return cutted_df, upper, lower
 
 
 def zscore_outlier(data, threshold = 3):
