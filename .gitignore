@@ -1,12 +1,12 @@
 # dependencies
-/node_modules
+node_modules
 
 # production
 **/data/
-/build
+build
+static
 dist
 __pycache__
-server/__pycache__
 server/migrations
 
 # misc
@@ -17,4 +17,4 @@ yarn-error.log*
 .ipynb_checkpoints
 
 # Virtual environment
-iserver/venv
+venv
