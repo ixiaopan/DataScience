@@ -1,12 +1,9 @@
 A Sentiment Analyzer Demo
 =========
 
+### Deep Learning Model
 
-## Install 
-
-## Deep Learning Model
-
-```
+```bash
 cd ./server/models
 
 # download data
@@ -20,7 +17,7 @@ python train.py
 ```
 
 ### Frontend
-```
+```bash
 ~ npm i
 
 ~ npm start
@@ -29,9 +26,9 @@ python train.py
 ```
 
 
-### Server
+### Backend
 
-```
+```bash
 ~ cd ./server
 
 # create workspace
@@ -43,13 +40,6 @@ python train.py
 # install dependencies
 ~ pip install -r requirements.txt
 
-# run blog
-~ export FLASK_APP='flasky.py'
-~ flask run
-
-# run test api
-# http://127.0.0.1:5000/api/v1/todos/
-~ export FLASK_APP='flasky-api.py'
+# run server
 ~ flask run
 ```
-
