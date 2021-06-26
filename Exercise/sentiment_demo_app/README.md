@@ -4,6 +4,20 @@ A Sentiment Analyzer Demo
 
 ## Install 
 
+## Deep Learning Model
+
+```
+cd ./server/models
+
+# download data
+sh download.sh
+
+# preprocess text & export cleaned data
+python preprocess.py
+
+# train & export model
+python train.py
+```
 
 ### Frontend
 ```

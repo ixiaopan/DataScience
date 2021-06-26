@@ -3,6 +3,7 @@ node_modules
 
 # production
 **/data/
+data
 build
 static
 dist
