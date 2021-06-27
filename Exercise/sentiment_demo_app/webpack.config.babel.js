@@ -1,14 +1,24 @@
 import path from 'path'
 import webpack from 'webpack'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import TerserPlugin from "terser-webpack-plugin"
 // import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
+
+const isProduction = process.env.NODE_ENV == 'production'
+const isDevelopment = !isProduction
+
 module.exports = {
-  entry: './src/index.js',
+  context: path.resolve(__dirname, 'src'),
+  
+  entry: './index.js',
 
   output: {
-    filename: 'dist.js',
-    path: path.resolve(__dirname, 'server/app/static')
+    path: path.resolve(__dirname, 'dist'),
+
+    filename: 'index.js',
   },
+
 
   module: {
     rules: [
@@ -44,9 +54,35 @@ module.exports = {
     ]
   },
 
-  optimization: {
-    minimize: true,
+  plugins: [].concat(
+    isProduction ? [] :
+    [
+      new HtmlWebpackPlugin({
+        title: 'Frontend App',
+        template: './mock/index.html'
+      }) 
+    ]
+  ),
+
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+
+    port: 9000,
+
+    hot: true,
+
+    proxy: {
+      '/api': 'http://localhost:5000',
+    },
   },
 
-  mode: 'production' // development
+  optimization: {
+    minimize: isProduction,
+    
+    minimizer: [
+      new TerserPlugin({ extractComments: !isProduction })
+    ]
+  },
+
+  mode: isProduction ? 'production' : 'development'
 }
