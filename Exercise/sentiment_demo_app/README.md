@@ -52,4 +52,8 @@ python train.py
 ```bash
 ~ heroku login
 
+~ cd server
+
+~ git push heroku master
+
 ```

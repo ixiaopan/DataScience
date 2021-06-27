@@ -1,9 +1,7 @@
 # Data Science
 
-- Python 
 - FlaskBlog(A Simple Flask Application)
 - Foundations of Machine Learning 
-- Deep Learning
+- Deep Learning Lab
 - Natural Language Processing(domain of interest)
 - Projects
-
