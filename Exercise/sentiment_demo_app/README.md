@@ -37,9 +37,19 @@ python train.py
 # activate workspace
 ~ source venv/bin/activate
 
+# export dependencies
+~ pipreqs server
+
 # install dependencies
 ~ pip install -r requirements.txt
 
 # run server
 ~ flask run
+```
+
+### Deploy to Heroku
+
+```bash
+~ heroku login
+
 ```

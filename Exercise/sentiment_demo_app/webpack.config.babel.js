@@ -34,7 +34,7 @@ module.exports = {
 
       {
         test: /\.less$/,
-        use: ['style-loader', 'css-loader', 'less-loader' ]
+        use: ['style-loader', 'css-loader', 'less-loader']
       },
 
       {
@@ -44,5 +44,9 @@ module.exports = {
     ]
   },
 
-  mode: 'development'
+  optimization: {
+    minimize: true,
+  },
+
+  mode: 'production' // development
 }
