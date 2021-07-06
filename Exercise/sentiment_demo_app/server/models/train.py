@@ -53,7 +53,7 @@ def training():
           out, _ = model(inputs)
           loss = loss_fn(out, t_label)
 
-          model.zero_grad()
+          optimizer.zero_grad()
           loss.backward()
           optimizer.step()
       
