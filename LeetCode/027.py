@@ -3,9 +3,7 @@
 @desc
  Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. 
  The relative order of the elements may be changed.
-
-@key: two pointer approach
-    https://towardsdatascience.com/two-pointer-approach-python-code-f3986b602640
+@key: two pointer - same
 """
 
 from typing import List

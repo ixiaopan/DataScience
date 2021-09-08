@@ -1,8 +1,9 @@
 """
 @date: 2021/09/05
 @desc:
-  Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
-@key: two pointer approach
+  Given a string s, determine if it is a palindrome, 
+  considering only alphanumeric characters and ignoring cases.
+@key: two pointer - opposite
 """
 
 class Solution:

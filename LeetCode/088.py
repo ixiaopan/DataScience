@@ -5,8 +5,9 @@
   sorted in non-decreasing order, 
   and two integers m and n, 
   representing the number of elements in nums1 and nums2 respectively.
-@key: two pointer approach
+@key: two pointer - same
 """
+
 from typing import List
 
 class Solution:

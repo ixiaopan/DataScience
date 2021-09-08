@@ -16,7 +16,7 @@ class Solution:
           
         #   s = v_a + v_b + inc
         #   val = str(s % 2) + val
-        #   if s == 2:
+        #   if s >= 2:
         #     inc = 1
         #   else:
         #     inc = 0
@@ -49,5 +49,7 @@ class Solution:
 
 assert Solution().addBinary('10', '1') == '11'
 assert Solution().addBinary('11', '1') == '100'
+assert Solution().addBinary('111', '11') == '1010'
+assert Solution().addBinary('111', '1') == '1000'
 assert Solution().addBinary('1010', '1011') == '10101'
         
