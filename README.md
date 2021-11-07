@@ -1,7 +1,8 @@
 # Data Science
 
-- FlaskBlog(A Simple Flask Application)
-- Foundations of Machine Learning 
-- Deep Learning Lab
-- Natural Language Processing(domain of interest)
-- Projects
+- Deep Learning Lab (2020 MSc Labs)
+- Exercise
+- FlaskBlog (A Simple Flask Application)
+- LeetCode
+- Machine Learning
+- Utilities (Workflow)
