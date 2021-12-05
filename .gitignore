@@ -9,6 +9,7 @@ static
 dist
 __pycache__
 server/migrations
+Exer
 
 # misc
 .DS_Store

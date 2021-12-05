@@ -1,7 +1,7 @@
-"""
-@date: 2021/08/31
-@key: hash table
-"""
+# """
+# @date: 2021/08/31
+# @key: hash table
+# """
 from typing import List
 
 class Solution:
@@ -20,3 +20,6 @@ class Solution:
             return [ hashmap[ nums[i] ], i ]
 
 assert Solution().twoSum([2, 7, 11, 15], 9) == [0, 1]
+
+
+

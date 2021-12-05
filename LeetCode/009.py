@@ -9,7 +9,7 @@
 """
 
 class Solution:
-    def isPalindrome(self, x: int) -> bool:
+  def isPalindrome(self, x: int) -> bool:
       # negative numbers => No
       # multiple of 10, excluding 0 => No
       if x < 0 or (x != 0 and x % 10 == 0):
