@@ -42,7 +42,7 @@ def get_html(url):
   r = requests.get(url)
   r.raise_for_status()
   r.encoding = r.apparent_encoding
-  soup = BeautifulSoup(r.text, 'lxml')
+  soup = BeautifulSoup(r.text, 'html.parser')
   return soup
 
 
