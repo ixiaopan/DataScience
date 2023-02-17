@@ -1,0 +1,36 @@
+{
+  "name": "vite-plugin-duplicate-file-check",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.5.0",
+  "scripts": {
+    "play": "cross-env NODE_ENV=dev pnpm -C play dev",
+    "dev": "nodemon --watch src --ext ts,js --exec 'npm run build'",
+    "build": "unbuild",
+    "prepublishOnly": "npm run build",
+    "release": "bumpp --commit --push && npm publish"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./*": "./*"
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "fast-glob": "^3.2.12"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.7",
+    "bumpp": "^8.2.1",
+    "nodemon": "^2.0.12",
+    "rimraf": "^4.1.2",
+    "unbuild": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.9.4"
+  }
+}

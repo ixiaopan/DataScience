@@ -1,0 +1,17 @@
+{
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["esnext", "DOM"],
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+  }
+}
