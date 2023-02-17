@@ -1,6 +1,6 @@
 import type { ResolvedConfig, ViteDevServer } from 'vite'
 
-import CompChecker from './checker'
+import Context from './checker'
 
 const defaultOptions = {
   dirs: ['src/components'],
@@ -13,11 +13,13 @@ type IOption = {
 }
 
 export default function duplicateFileCheck(options: IOption) {
+  const ctx = new Context()
+
   return {
     name: 'duplicate-file-check',
 
     configResolved(config: ResolvedConfig) {
-      CompChecker.setupConfig({
+      ctx.setupConfig({
         ...defaultOptions,
         ...options,
         root: config.root,
@@ -25,7 +27,7 @@ export default function duplicateFileCheck(options: IOption) {
     },
 
     configureServer(server: ViteDevServer) {
-      CompChecker.setupWatcher(server.watcher)
+      ctx.setupServer(server)
     },
   }
 }
